@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+  --font-color-primary: #060606;
+  --font-color-accent: #ff0049;
+  --font-color-gray: #606060;
+  --font-color-light: #f0f0f0;
+  --color-background: #ffb36f;
+  --color-background-dark: #600200;
+  --box-shadow: 0 0.5rem 1rem rgba(96, 2, 0, 0.5) !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 60px;
+
+  background-color: var(--color-background-dark);
+  box-shadow: var(--box-shadow);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+ul li a {
+  color: var(--font-color-light);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-inline: 0.5rem;
+}
+
+section {
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.hero-img {
+  display: flex;
+  margin-inline: auto;
+  padding-top: 60px;
+}
+
+.hero-img img {
+  border-radius: 6px;
+  margin: 2rem auto;
+  width: min(90%, 1024px);
+  box-shadow: var(--box-shadow);
+}
+
+.hero-headline {
+  margin: auto;
+  width: min(90%, 1024px);
+}
+
+.hero-headline h1 {
+  margin-block: 1rem;
+  text-align: center;
+}
+
+.hero-headline h3 {
+  font-weight: 400;
+  font-size: 1em;
+  text-align: justify;
+  text-indent: 2rem;
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+  height: 40px;
+  background-color: var(--color-background);
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: var(--font-color-primary);
+  text-decoration: 0;
+  font-weight: 500;
+  font-size: 1em;
+}
